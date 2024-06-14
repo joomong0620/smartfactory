@@ -1,24 +1,21 @@
 from django.shortcuts import render
-from django.http import HttpResponse, JsonResponse
+from django.http import JsonResponse
 from rest_framework import viewsets
 from rest_framework.decorators import api_view
-from rest_framework import serializers
-from .models import *
-from .serializer import *
-from rest_framework.views import APIView
-from rest_framework.response import Response
-from rest_framework import status
+from .models import manager_info, production, sensor, ovensensor
+from .serializer import managerSerializer, productionSerializer, sensorSerializer, ovensensorSerializer
+import torch
+from PIL import Image
 
 
 @api_view(['POST'])
 def manage_post(request):
     if request.method == 'POST':
-        # 새로운 데이터를 생성하는 로직 추가 (여기에 필요한 내용을 작성하세요)
         pass
+
 class manageViewSet(viewsets.ModelViewSet):
     queryset = manager_info.objects.all()
     serializer_class = managerSerializer
-
 
 manage_list = manageViewSet.as_view({
     'get': 'list',
@@ -27,19 +24,18 @@ manage_list = manageViewSet.as_view({
 })
 manage_detail = manageViewSet.as_view({
     'get': 'retrieve',
-    'patch': 'p[partial_update',
+    'patch': 'partial_update',
     'delete': 'destroy',
 })
 
 @api_view(['POST'])
 def prod_post(request):
     if request.method == 'POST':
-        # 새로운 데이터를 생성하는 로직 추가 (여기에 필요한 내용을 작성하세요)
         pass
+
 class prodViewSet(viewsets.ModelViewSet):
     queryset = production.objects.all()
     serializer_class = productionSerializer
-
 
 prod_list = prodViewSet.as_view({
     'get': 'list',
@@ -48,19 +44,18 @@ prod_list = prodViewSet.as_view({
 })
 prod_detail = prodViewSet.as_view({
     'get': 'retrieve',
-    'patch': 'p[partial_update',
+    'patch': 'partial_update',
     'delete': 'destroy',
 })
 
 @api_view(['POST'])
 def sensor_post(request):
     if request.method == 'POST':
-        # 새로운 데이터를 생성하는 로직 추가 (여기에 필요한 내용을 작성하세요)
         pass
+
 class sensorViewSet(viewsets.ModelViewSet):
     queryset = sensor.objects.all()
     serializer_class = sensorSerializer
-
 
 sensor_list = sensorViewSet.as_view({
     'get': 'list',
@@ -69,7 +64,26 @@ sensor_list = sensorViewSet.as_view({
 })
 sensor_detail = sensorViewSet.as_view({
     'get': 'retrieve',
-    'patch': 'p[partial_update',
+    'patch': 'partial_update',
     'delete': 'destroy',
 })
 
+@api_view(['POST'])
+def ovensensor_post(request):
+    if request.method == 'POST':
+        pass
+
+class ovensensorViewSet(viewsets.ModelViewSet):
+    queryset = ovensensor.objects.all()
+    serializer_class = ovensensorSerializer
+
+ovensensor_list = ovensensorViewSet.as_view({
+    'get': 'list',
+    'post': 'create',
+    'delete': 'destroy',
+})
+ovensensor_detail = ovensensorViewSet.as_view({
+    'get': 'retrieve',
+    'patch': 'partial_update',
+    'delete': 'destroy',
+})

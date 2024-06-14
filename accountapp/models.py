@@ -13,6 +13,7 @@ class manager_info(models.Model):
     reg_time = models.DateTimeField(auto_now_add=True)
     log_time = models.DateTimeField(auto_now=True)
 
+
 class production(models.Model):
     production_id = models.IntegerField(primary_key=True)
     manager_pro_fk = models.ForeignKey('manager_info', on_delete=models.CASCADE)
@@ -25,6 +26,14 @@ class sensor(models.Model):
     sensor_id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
     temperature = models.DecimalField(max_digits=5, decimal_places=2, null=True)
     humidity = models.DecimalField(max_digits=5, decimal_places=2, null=True)
-    dust = models.DecimalField(max_digits=5, decimal_places=2, null=True)
+    pm10 = models.DecimalField(max_digits=5, decimal_places=2, null=True)
+    pm25 = models.DecimalField(max_digits=5, decimal_places=2, null=True)
+    date = models.DateTimeField(auto_now_add=True, blank=True)
+
+
+class ovensensor(models.Model):
+    oven_id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
+    temperature = models.DecimalField(max_digits=5, decimal_places=2, null=True)
+    humidity = models.DecimalField(max_digits=5, decimal_places=2, null=True)
     date = models.DateTimeField(auto_now_add=True, blank=True)
 
