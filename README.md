@@ -39,7 +39,7 @@ AI 기반 스마트 팩토리 안전·자동화 관리 시스템입니다.
 
 ## 📌 주요 기능
 
-#### DB 구축 - [상세 보기 - WIKI 이동](https://github.com/joomong0620/smartfactory/wiki/DB-%EA%B5%AC%EC%B6%95)
+#### DB 구축 - [상세 보기 - WIKI 이동](https://github.com/joomong0620/smartfactory/wiki/%EC%A3%BC%EC%9A%94-%EA%B8%B0%EB%8A%A5-%EC%86%8C%EA%B0%9C(DB-%EA%B5%AC%EC%B6%95))
 - MySQL 기반 테이블 설계 및 구축
 - 관리자 / 생산 데이터 / 센서 / 오븐 / 손 감지 / 게시물 등 전체 스키마 구성
 - Django ORM 기반 모델 정의
@@ -68,5 +68,6 @@ AI 기반 스마트 팩토리 안전·자동화 관리 시스템입니다.
 - 감지 여부 DB 저장
 - 가장 최근 손 감지 상태 조회 API 제공
 - 모니터링 화면에서 실시간 확인
+
 
 
