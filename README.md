@@ -46,7 +46,7 @@ AI 기반 스마트 팩토리 안전·자동화 관리 시스템입니다.
 - DB 마이그레이션 및 연동
 
 
-#### API 구축 - [상세 보기 - WIKI 이동](https://github.com/joomong0620/smartfactory/wiki/API-%EA%B5%AC%EC%B6%95)
+#### API 구축 - [상세 보기 - WIKI 이동](https://github.com/joomong0620/smartfactory/wiki/%EC%A3%BC%EC%9A%94-%EA%B8%B0%EB%8A%A5-%EC%86%8C%EA%B0%9C(API-%EA%B5%AC%EC%B6%95))
 - 관리자 관리 API (CRUD)
 - 생산 데이터 관리 API
 - 공장 센서값 관리 API(온도·습도·미세먼지)
@@ -68,4 +68,5 @@ AI 기반 스마트 팩토리 안전·자동화 관리 시스템입니다.
 - 감지 여부 DB 저장
 - 가장 최근 손 감지 상태 조회 API 제공
 - 모니터링 화면에서 실시간 확인
+
 
