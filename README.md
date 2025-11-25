@@ -63,11 +63,12 @@ AI 기반 스마트 팩토리 안전·자동화 관리 시스템입니다.
 - 감지 결과를 JSON으로 반환
 
 
-#### 손 감지 데이터 처리 (AI) - [상세 보기 - WIKI 이동](https://github.com/joomong0620/smartfactory/wiki/%EC%86%90-%EA%B0%90%EC%A7%80-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%B2%98%EB%A6%AC-(AI))
+#### 손 감지 데이터 처리 (AI) - [상세 보기 - WIKI 이동](https://github.com/joomong0620/smartfactory/wiki/%EC%A3%BC%EC%9A%94-%EA%B8%B0%EB%8A%A5-%EC%86%8C%EA%B0%9C(%EC%86%90-%EA%B0%90%EC%A7%80-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%B2%98%EB%A6%AC-(AI)))
 - 손 감지 상태(status) 값을 서버에서 수신
 - 감지 여부 DB 저장
 - 가장 최근 손 감지 상태 조회 API 제공
 - 모니터링 화면에서 실시간 확인
+
 
 
 
