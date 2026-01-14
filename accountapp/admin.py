@@ -1,7 +1,10 @@
 from django.contrib import admin
-from .models import manager_info, production, sensor, ovensensor
-admin.site.register(manager_info)
+from .models import manager, production, sensor, ovensensor, post, HandDetection
+
+admin.site.register(manager)
 admin.site.register(production)
 admin.site.register(sensor)
 admin.site.register(ovensensor)
+admin.site.register(post)
+admin.site.register(HandDetection)
 # Register your models here.
