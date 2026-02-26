@@ -31,14 +31,14 @@ AI 영상 인식과 IoT 제어를 결합하여 사고 발생 전 기계를 즉�
 
 ## ⚙️ Development Environment
 #### 🖥 Backend / AI (김주연)
-- **Language**: Python 3.12.0  
-- **Backend Framework**: Django REST Framework  
-- **Database**: MySQL  
-- **ORM**: Django ORM  
-- **Server Runtime**: Gunicorn / Django runserver (local)  
-- **Development Tools**: PyCharm  
-- **AI Processing**: OpenCV, YOLO-based image detection (제조품 불량 감지 / 손 끼임 감지)
-- **Labeling Tool** : Roboflow
+- Python 3.12.0  
+- Django REST Framework  
+- MySQL  
+- Django ORM  
+- Gunicorn / Django runserver (local)  
+- PyCharm  
+- OpenCV, YOLO-based image detection (제조품 불량 감지 / 손 끼임 감지)
+- Roboflow
 
 #### 🌐 Frontend (팀원 A)
 - HTML / CSS / JavaScript
@@ -55,10 +55,10 @@ AI 영상 인식과 IoT 제어를 결합하여 사고 발생 전 기계를 즉�
 - 서버 연동 통신 구조 구현
 
 #### 🤖 AI / Computer Vision (공통 영역)
-OpenCV
-YOLO 기반 객체 감지
-CNN 기반 손 인식 모델
-실시간 영상 처리 파이프라인
+- OpenCV
+- YOLO 기반 객체 감지
+- CNN 기반 손 인식 모델
+- 실시간 영상 처리 파이프라인
 
 ---
 
@@ -113,4 +113,5 @@ CNN 기반 손 인식 모델
 
 ## 💡 Lessons Learned
 하드웨어-AI-백엔드가 결합된 복합 시스템을 개발하며, 백엔드 개발자가 단순히 데이터만 전달하는 것이 아니라 전체 시스템의 지연(Latency)과 에러를 조율하는 컨트롤 타워 역할을 해야 함을 깊이 체득했습니다.
+
 
