@@ -35,12 +35,15 @@ AI 영상 인식과 IoT 제어를 결합하여 사고 발생 전 기계를 즉�
 | 팀원 B   | Frontend / UIUX        | React 기반 실시간 모니터링 대시보드 개발, Figma 활용 UI/UX 디자인 및 데이터 시각화(Chart.js) 구현, 데이터셋 라벨링 참여 |
 
 
+
 ## ⚙️ Development Environment
 
-﻿- Backend: Python 3.12, Django REST Framework, MySQL, Gunicorn
-- AI: YOLOv5, OpenCV, CNN 기반 객체 탐지, Roboflow(Dataset 관리)
-- Hardware: Jetson Nano, IoT 센서(온습도/미세먼지)
-- Frontend: React, Chart.js
+
+﻿- **Backend**: Python 3.12, Django REST Framework, MySQL, Gunicorn
+- **AI**: YOLOv5, OpenCV, CNN 기반 객체 탐지, Roboflow(Dataset 관리)
+- **Hardware**: Jetson Nano, IoT 센서(온습도/미세먼지)
+- **Frontend**: React, Chart.js
+
 
 ---
 
@@ -119,6 +122,7 @@ AI 영상 인식과 IoT 제어를 결합하여 사고 발생 전 기계를 즉�
 
 ## 💡 Lessons Learned
 하드웨어-AI-백엔드가 결합된 복합 시스템을 개발하며, 백엔드 개발자가 단순히 데이터만 전달하는 것이 아니라 전체 시스템의 지연(Latency)과 에러를 조율하는 컨트롤 타워 역할을 해야 함을 깊이 체득했습니다.
+
 
 
 
